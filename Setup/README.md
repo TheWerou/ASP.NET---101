@@ -243,6 +243,7 @@ In `Program.cs`, use this configuration as follows:
 ``` C#
 var app = builder
     .BasicConfiguration()
+    .AddSwaggerSupport()
     .Build();
     
 app.UseSerilogRequestLogging();
