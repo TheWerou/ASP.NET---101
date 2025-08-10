@@ -1,14 +1,6 @@
 # About 
-The goal of this article is to provide you with the fundamental knowledge needed to start using ASP.NET. I will explain how and what to set up in a new project. This project will also serve as a go-to template for creating ASP.NET applications or for my teachings ASP.NET to others.
-# What is ASP.NET? 
+In this article I will explain how and what to set up in a new project. I will explain how and what to set up in a new project. This project will also serve as a go-to template for creating ASP.NET applications or for my teachings ASP.NET to others.
 
-So, what is ASP.NET? As stated on the official ASP.NET homepage: https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet.
-
-> ASP.NET is an open source web framework, created by Microsoft, for building modern web apps and services with .NET.
-> 
-> ASP.NET is cross platform and runs on Windows, Linux, macOS, and Docker.
-
-In this article, I will show you how to create a Web API using REST.
 # Solution creation
 
 Let's start from creating empty project. You can use following command.
