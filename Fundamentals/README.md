@@ -4,7 +4,6 @@ The goal of this article is to provide you with the fundamental knowledge needed
 
 So, what is ASP.NET? As stated on the official ASP.NET homepage: https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet.
 
-> [!Quote]
 > ASP.NET is an open source web framework, created by Microsoft, for building modern web apps and services with .NET.
 > 
 > ASP.NET is cross platform and runs on Windows, Linux, macOS, and Docker.
