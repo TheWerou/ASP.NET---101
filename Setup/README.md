@@ -199,20 +199,22 @@ app.Run();
 Add the following configuration to your `appsettings.json`:
 
 ``` JSON
-"Serilog": {
-	"MinimumLevel": {
-	  "Default": "Information",
-	  "Override": {
-		"Microsoft": "Warning",
-		"Microsoft.Hosting.Lifetime": "Information"
-	  }
-	},
-	"WriteTo": [
-	  {
-		"Name": "Console"
-	  }
-	]
-},
+{
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+      }
+    },
+    "WriteTo": [
+      {
+      "Name": "Console"
+      }
+    ]
+  },
+}
 ```
 
 ### Swagger configuration
@@ -255,7 +257,7 @@ app.Run();
 ```
 
 ### CORS configuration
-Similar to the logging configuration, we retrieve CORS settings from `appsettings.json` and apply the following configuration. Start by updating `BasicConfig.cs`:
+If you don’t have a frontend, you don’t need to configure this. Similar to the logging configuration, we retrieve CORS settings from `appsettings.json` and apply the following configuration. Start by updating `BasicConfig.cs`:
 
 ``` C#
 public static WebApplicationBuilder BasicConfiguration(this WebApplicationBuilder builder)
@@ -285,10 +287,12 @@ public static WebApplicationBuilder BasicConfiguration(this WebApplicationBuilde
 Add the following section to your `appsettings.json`:
 
 ``` JSON
-"CORS-Paths": [ // Use your URLs here
-	"https://localhost:7291",
-	"http://localhost:5055"  
-],
+{
+  "CORS-Paths": [ // Use your frontend URLs here
+    "https://localhost:7291",
+    "http://localhost:5055"  
+  ],
+}
 ```
 
 ### Final configuration
